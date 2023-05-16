@@ -20,7 +20,9 @@ export default Careers;
 
 // Loader function
 export const careersLoader = async () => {
-	const response = await fetch('http://localhost:3500/careers');
+	const response = await fetch(
+		'https://react-router-dom-mockapi.vercel.app/careers'
+	);
 
 	if (!response.ok) {
 		throw Error('Could not fetch the careers');
